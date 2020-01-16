@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="services.xsd" name="a completer">
+  <description>
+    A completer
+  </description>
+
+  <parameter name="ServiceClass" locked="false">Nom de la classe Java implementant le service</parameter>
+
+  <operation name="nom de l'operation associee au service">
+    <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+  </operation>
+</service>
+
